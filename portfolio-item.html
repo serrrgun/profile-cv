@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Profile CV</title>
+</head>
+<body>
+  <div class="page">
+    <div class="background"></div>
+    <div class="container">
+      <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <header class="header">
+        <div class="header__photo">
+          <img src="img/main_photo.jpg" alt="main-photo">
+        </div>
+        <h2 class="header__title">Sergey Turishchev</h2>
+        <h4 class="header__subtitle">Frontend Developer</h4>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#home" />
+                </svg>
+                <span class="main-nav__text">Home</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="about.html" class="main-nav__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#patient" />
+                </svg>
+                <span class="main-nav__text">About Me</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="resume.html" class="main-nav__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#training" />
+                </svg>
+                <span class="main-nav__text">Resume</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link  main-nav__link--active">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#briefcase" />
+                </svg>
+                <span class="main-nav__text">Portfolio</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#blog" />
+                </svg>
+                <span class="main-nav__text">Blog</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contact.html" class="main-nav__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#contact" />
+                </svg>
+                <span class="main-nav__text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#linkedin" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__link-icon">
+                  <use xlink:href="img/sprite-svg.svg#skype" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button-cv">Download CV</a>
+      </header>
+      <main class="content content--project">
+        <section class="project">
+          <h2 class="portfolio__title title title--page">Project <span>Name</span></h2>
+          <div class="project__wrapper">
+            <div class="project__slider">
+              <div class="swiper-container project-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project-slider__item">
+                    <div class="project-slider__item-wrapper">
+                      <img src="/img/mac.png" alt="mac">
+                      <div class="project-slider__item-bg project-slider__item-bg--mac"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-slider__item">
+                    <div class="project-slider__item-wrapper">
+                      <img src="/img/macbook.png" alt="mac">
+                      <div class="project-slider__item-bg project-slider__item-bg--macbook"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-slider__item">
+                    <div class="project-slider__item-wrapper">
+                      <img src="/img/iphone.png" alt="mac">
+                      <div class="project-slider__item-bg project-slider__item-bg--iphone"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="project__description">
+              <h3 class="title title--block">Description</h3>
+              <ul class="project__description-list">
+                <li class="project__description-item project__description-item--name">Alex Smith</li>
+                <li class="project__description-item project__description-item--link"><a href="#">www.project-site.com</a></li>
+                <li class="project__description-item project__description-item--github"><a href="#">link-github</a></li>
+                <li class="project__description-item project__description-item--date">25 december, 2016</li>
+              </ul>
+              <p class="project__description-paragrahp">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              <h3 class="title title--block">Technology</h3>
+              <ul class="project__description-tech">
+                <li class="project__description-tech-item">html5</li>
+                <li class="project__description-tech-item">css</li>
+                <li class="project__description-tech-item">js</li>
+                <li class="project__description-tech-item">ajax</li>
+                <li class="project__description-tech-item">php</li>
+              </ul>
+              <h3 class="title title--block">Share</h3>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="navigation">
+        <button class="navigation__btn navigation__btn--prev">
+          <svg class="social__link-icon">
+            <use xlink:href="img/sprite-svg.svg#back-btn" />
+          </svg>
+        </button>
+        <button class="navigation__btn navigation__btn--next">
+          <svg class="social__link-icon">
+            <use xlink:href="img/sprite-svg.svg#back-btn" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
