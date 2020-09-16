@@ -6,6 +6,7 @@
   flex-direction: column;
   background-color: #444;
   border-radius: 35px;
+  z-index: 15;
 
   &__btn {
     padding: 15px 10px;
@@ -54,6 +55,7 @@
   }
 
   @media screen and (max-width: 1120px) {
+    position: fixed;
     right: 10px;
     bottom: 10px;
     border: 2px solid #5050f5;

@@ -1,0 +1,62 @@
+.title {
+  padding: 0;
+  margin: 0;
+  color: #eeeeee;
+  z-index: 1;
+
+  & span {
+    color: #5050f5;
+  }
+
+  &--page {
+    display: inline-block;
+    position: relative;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 32px;
+
+    &::after {
+      position: absolute;
+      opacity: .45;
+      top: 20px;
+      right: 0;
+      content: '';
+      height: 30px;
+      width: 50px;
+      background-image: -webkit-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      background-image: -moz-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      background-image: -ms-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      -webkit-background-size: 6px 6px;
+      -moz-background-size: 6px 6px;
+      background-size: 6px 6px;
+      z-index: -1;
+    }
+  }
+
+  &--block {
+    display: inline-block;
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 21px;
+
+    &::after {
+      position: absolute;
+      opacity: .45;
+      top: 10px;
+      right: 0;
+      content: '';
+      height: 20px;
+      width: 30px;
+      background-image: -webkit-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      background-image: -moz-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      background-image: -ms-repeating-radial-gradient(center center,#5050f5,#5050f5 1px,transparent 0px,transparent 100%);
+      -webkit-background-size: 6px 6px;
+      -moz-background-size: 6px 6px;
+      background-size: 6px 6px;
+      z-index: -1;
+    }
+  }
+}

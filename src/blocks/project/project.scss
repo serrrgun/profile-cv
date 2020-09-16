@@ -1,0 +1,101 @@
+.project {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1120px) {
+      flex-direction: column;
+    }
+  }
+
+  &__slider {
+    width: 68%;
+    height: 500px;
+
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    width: 30%;
+    position: relative;
+    padding: 20px 25px 25px;
+    background-color: #333;
+    color: #d5d5d5;
+    font-weight: 600;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 30px;
+
+    }
+
+    &-item {
+      padding-left: 30px;
+      margin-bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 20px;
+
+      &--name {
+        background-image: url(../../img/user.png);
+      }
+
+      &--link {
+        background-image: url(../../img/globe.png);
+      }
+
+      &--github {
+        background-image: url(../../img/github.png);
+      }
+
+      &--date {
+        background-image: url(../../img/calendar.png);
+      }
+
+      a {
+        text-decoration: none;
+        color: #0bb5ee;
+        transition: color .3s;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #2b91b3;
+        }
+      }
+    }
+
+    &-paragrahp {
+      margin: 0;
+      margin-bottom: 30px;
+      line-height: 1.6em;
+    }
+
+    &-tech {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 30px;
+
+      &-item {
+        font-size: 12px;
+        line-height: 1.5em;
+        color: #e5e5e5;
+        padding: 2px 7px;
+        background-color: #444;
+        border-radius: 3px;
+        border: 1px solid #444;
+        margin: 3px 2px 2px;
+      }
+    }
+
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+    }
+  }
+}

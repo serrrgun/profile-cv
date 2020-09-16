@@ -1,0 +1,25 @@
+.resume {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1120px) {
+      flex-direction: column;
+    }
+  }
+
+  &__inner {
+    width: 48%;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+    }
+  }
+}

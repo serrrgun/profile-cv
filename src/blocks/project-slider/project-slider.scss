@@ -1,0 +1,66 @@
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.project-slider {
+  padding-bottom: 30px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-bg {
+      position: absolute;
+      background-color: #fff;
+      background-position: top;
+      background-size: 100%;
+      transition: 15s;
+      cursor: pointer;
+
+      &--mac {
+        top: 4.9%;
+        left: 4%;
+        width: 92%;
+        height: 64%;
+        background-image: url(../../img/desktopWebsite.jpg);
+      }
+
+      &--macbook {
+        top: 6%;
+        left: 12%;
+        width: 76%;
+        height: 80%;
+        background-image: url(../../img/desktopWebsite.jpg);
+      }
+
+      &--iphone {
+        top: 11.5%;
+        left: 16.5%;
+        width: 66.9%;
+        height: 74.7%;
+        background-image: url(../../img/mobileWebsite.jpg);
+      }
+
+      &:hover,
+      &:focus {
+        background-position: bottom;
+      }
+    }
+  }
+
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right{
+    background-image: none;
+  }
+}
